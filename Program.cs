@@ -22,3 +22,9 @@ gerente2.DefinirSalario(2000.0m);
 gerente2.ExibirSalario();
 
 
+
+IPagamento p1 = new PagamentoPix();
+IPagamento p2 = new PagamentoCartao();
+
+p1.Pagar(150m);
+p2.Pagar(20m);

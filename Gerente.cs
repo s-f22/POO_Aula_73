@@ -4,19 +4,14 @@ namespace Heranca
     {
         public int Codigo { get; set; }
 
+        public Gerente() { }
+        
+        public Gerente(string nome, decimal salario)
+        : base(nome, salario) { }
+
         public void GerenciarEquipe()
         {
             Console.WriteLine("O gestor está gerenciando a equipe");
-        }
-
-        public Gerente()
-        {
-            
-        }
-
-        public Gerente(string nome, decimal salario) : base(nome, salario)
-        {
-           
         }
 
         public void ExibirSalario()
