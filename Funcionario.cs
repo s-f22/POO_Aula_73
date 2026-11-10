@@ -6,7 +6,7 @@ namespace Heranca
 
         protected decimal Salario;
 
-        public void Trabalhar()
+        public virtual void Trabalhar()
         {
             Console.WriteLine("Funcionário está executando atividades");
         }
@@ -21,6 +21,10 @@ namespace Heranca
             Nome = nome;
             Salario = salario;
         }
+        
+
+        public abstract decimal CalcularBonus();
+        
 
     }
 }
